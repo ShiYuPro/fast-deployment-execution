@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "name": "project-release-id",
+  "deadline_seconds": 900,
+  "state_file": ".deploy/release-id/deploy-exec-state.json",
+  "phases": [
+    {
+      "id": "preflight",
+      "kind": "preflight",
+      "argv": [
+        "bash",
+        ".deploy/release-id/preflight.sh"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "id": "build",
+      "kind": "build",
+      "argv": [
+        "bash",
+        ".deploy/release-id/build.sh"
+      ],
+      "timeout_seconds": 600
+    },
+    {
+      "id": "remote-dry-run",
+      "kind": "dry-run",
+      "argv": [
+        "bash",
+        ".deploy/release-id/dry-run.sh"
+      ],
+      "timeout_seconds": 180
+    },
+    {
+      "id": "deploy",
+      "kind": "deploy",
+      "argv": [
+        "bash",
+        ".deploy/release-id/deploy.sh"
+      ],
+      "timeout_seconds": 600
+    },
+    {
+      "id": "verify",
+      "kind": "verify",
+      "argv": [
+        "bash",
+        ".deploy/release-id/verify.sh"
+      ],
+      "timeout_seconds": 180
+    }
+  ]
+}
