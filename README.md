@@ -2,6 +2,8 @@
 
 A deployment workflow skill for Codex and Claude Code: one release owner, a fixed artifact, bounded execution, and verification of the deployed result.
 
+[View on skills.sh](https://skills.sh/ShiYuPro/fast-deployment-execution/fast-deployment-execution)
+
 ## Install
 
 With [Skills CLI](https://skills.sh/docs) (Node.js and npm required):
