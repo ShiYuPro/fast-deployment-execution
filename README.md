@@ -4,6 +4,17 @@ A deployment workflow skill for Codex and Claude Code: one release owner, a fixe
 
 ## Install
 
+With [Skills CLI](https://skills.sh/docs) (Node.js and npm required):
+
+```sh
+npx skills add ShiYuPro/fast-deployment-execution --skill fast-deployment-execution
+```
+
+Choose Codex or Claude Code when prompted. This installs into the current project;
+review the destination if you already have this skill installed.
+
+Or install directly with Git:
+
 From your project directory, choose the command for your agent. Existing destinations
 are not overwritten by `git clone`.
 
@@ -54,3 +65,7 @@ See [SOURCES.md](SOURCES.md) for reviewed alternatives and adaptation decisions,
 and [LICENSE](LICENSE) for terms. This standalone repository was split from
 [Agent Workflow Skills](https://github.com/ShiYuPro/agent-workflow-skills).
 Future changes for this skill belong here.
+
+## Creator
+
+Built by [Shiyu Yang](https://github.com/ShiYuPro). Explore [my apps and open-source work](https://shiu.pro/). For job opportunities, cofounder conversations, or app and website projects, [get in touch](https://shiu.pro/contact/).
